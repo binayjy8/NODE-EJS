@@ -15,7 +15,8 @@ app.get("/home", (req, res) => {
     res.send("Hello Khuntapingu");
 });
 
-app.get("/instagram", (req, res) => {
+app.get("/ig/:username", (req, res) => {
+    let username = req.params;
     res.render("instgram.ejs", {});
 });
 
