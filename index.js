@@ -16,8 +16,9 @@ app.get("/home", (req, res) => {
 });
 
 app.get("/rolldice", (req, res) => {
-    res.render("rolldice.ejs")
-})
+    let value = Math.floor(Math.random() * 6 ) + 1 ;
+    res.render("rolldice.ejs", {value});
+});
 
 app.listen(port, ()=> {
     console.log(`listening to the port ${port}`);
