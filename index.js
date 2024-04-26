@@ -15,6 +15,10 @@ app.get("/home", (req, res) => {
     res.send("Hello Khuntapingu");
 });
 
+app.get("/instagram", (req, res) => {
+    res.render("instgram.ejs", {});
+});
+
 app.get("/rolldice", (req, res) => {
     let value = Math.floor(Math.random() * 6 ) + 1 ;
     res.render("rolldice.ejs", {value});
