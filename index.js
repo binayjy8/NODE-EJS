@@ -16,8 +16,8 @@ app.get("/home", (req, res) => {
 });
 
 app.get("/ig/:username", (req, res) => {
-    let username = req.params;
-    res.render("instgram.ejs", {});
+    let {username} = req.params;
+    res.render("instagram.ejs", {username});
 });
 
 app.get("/rolldice", (req, res) => {
