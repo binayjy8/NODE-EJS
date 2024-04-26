@@ -16,8 +16,9 @@ app.get("/home", (req, res) => {
 });
 
 app.get("/ig/:username", (req, res) => {
+    const follower = ["miami", "fraco", "guyena", "candy"];
     let {username} = req.params;
-    res.render("instagram.ejs", {username});
+    res.render("instagram.ejs", {username, follower});
 });
 
 app.get("/rolldice", (req, res) => {
