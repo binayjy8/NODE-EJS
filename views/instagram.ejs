@@ -15,8 +15,8 @@
 
     <hr>
 
-    <% for(post of posts) { %>
-        <img src="post.image" alt="some img">
+    <% for(post of data.posts) { %>
+        <img src="<%= post.image %>" alt="some img">
         <p>Likes : <%= post.likes %> &nbsp;&nbsp;&nbsp;&nbsp;
             commentss : <%= post.comments %> </p >
     <% } %>    
